@@ -1,0 +1,4 @@
+NRClex
+pandas
+openpyxl
+textblob
