@@ -44,11 +44,11 @@ def extract_keywords(file):
         df['top_emotions'] = df['combined_text'].apply(lambda x: get_top_emotions(str(x)))
 
         # Save the name and top emotions columns to a new Excel file
-        output_file = "data/studygrpA_with_emotions4.xlsx"
+        output_file = "studygrpA_with_emotions4.xlsx"
         df[['name', 'top_emotions']].to_excel(output_file, index=False)
 
         # Print a summary of the processed data
-        print(df[['name', 'top_emotions']].head())
+        print(df[['top_emotions']].head())
         print(f"Processed file saved as: {output_file}")
 
     except FileNotFoundError:
