@@ -63,9 +63,9 @@ def process_and_plot_emotions(emotion_column, title):
     plot_emotion_scores(mean_scores, title)
 
 
-# Import your data
-df_studygrpA = pd.read_excel("data/studygrpA_with_emotions4.xlsx")
-df_studygrpB = pd.read_excel("data/studygrpB_with_emotions4.xlsx")
+# Import your data (Run lexnalysis2.py first)
+df_studygrpA = pd.read_excel("studygrpA_with_emotions4.xlsx")
+df_studygrpB = pd.read_excel("studygrpB_with_emotions4.xlsx")
 
 # Extract emotion columns
 emocolumnA = df_studygrpA["top_emotions"]
